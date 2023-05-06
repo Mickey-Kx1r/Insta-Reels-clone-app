@@ -1,0 +1,51 @@
+.app_logo{
+  align-items: center;
+  position: absolute;
+  height: 11vh;
+  left: 98.5vh;
+}
+html{
+  scroll-snap-type: y mandatory;
+}
+
+.app{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: black;
+}
+.app_top{
+  margin: -110px;
+}
+.app_top > h3{
+  position: relative;
+  top: 90px;
+  text-align: center;
+  color: white;
+}
+
+.app_videos{
+  bottom: -70px;
+  position: relative;
+  height: 70vh;
+  width: 40%;
+  background-color: white;
+  border-radius: 20px;
+  max-width: 450px;
+  max-height: 750px;
+  overflow:scroll ;
+  scroll-snap-type: y mandatory;
+
+}
+
+/* Hide scrollbar for chrome,Safari and opera browsers */
+.app_videos::-webkit-scrollbar{
+  display: none;
+}
+
+/* Hide scrollbar for IE,Edge and Firefox browsers */
+
+.app_videos{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
